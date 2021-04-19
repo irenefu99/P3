@@ -14,7 +14,7 @@ Ejercicios básicos
   `get_pitch`.
 
    * Complete el cálculo de la autocorrelación e inserte a continuación el código correspondiente.
-   <img width="320" alt="Autocorrelacion_codigo" src="https://user-images.githubusercontent.com/79319805/115211894-eb4d2580-a0f7-11eb-8cf4-a07d731c2484.PNG">
+   	<img width="320" alt="Autocorrelacion_codigo" src="https://user-images.githubusercontent.com/79319805/115211894-eb4d2580-a0f7-11eb-8cf4-a07d731c2484.PNG">
 
 
    * Inserte una gŕafica donde, en un *subplot*, se vea con claridad la señal temporal de un segmento de
@@ -24,7 +24,7 @@ Ejercicios básicos
 	 NOTA: es más que probable que tenga que usar Python, Octave/MATLAB u otro programa semejante para
 	 hacerlo. Se valorará la utilización de la librería matplotlib de Python.
 	 ![Autocorrelacion](https://user-images.githubusercontent.com/79319805/115210836-e471e300-a0f6-11eb-9935-5d030a52630e.png)
-         > El segmento de audio contiene la vocal "e". Tras el cálculo, obtenemos una autocorrelación par respecto al origen.
+	 > El segmento de audio contiene la vocal "e". Tras el cálculo, obtenemos una autocorrelación par respecto al origen.
 
    * Determine el mejor candidato para el periodo de pitch localizando el primer máximo secundario de la
      autocorrelación. Inserte a continuación el código correspondiente.
