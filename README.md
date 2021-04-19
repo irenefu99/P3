@@ -14,8 +14,7 @@ Ejercicios básicos
   `get_pitch`.
 
    * Complete el cálculo de la autocorrelación e inserte a continuación el código correspondiente.
-   	<img width="320" alt="Autocorrelacion_codigo" src="https://user-images.githubusercontent.com/79319805/115211894-eb4d2580-a0f7-11eb-8cf4-a07d731c2484.PNG">
-
+   	<img width="504" alt="Autocorrelacion_codigo2" src="https://user-images.githubusercontent.com/79319805/115213152-27cd5100-a0f9-11eb-94af-1ba1fc4b2f81.PNG">
 
    * Inserte una gŕafica donde, en un *subplot*, se vea con claridad la señal temporal de un segmento de
      unos 30 ms de un fonema sonoro y su periodo de pitch; y, en otro *subplot*, se vea con claridad la
@@ -25,6 +24,8 @@ Ejercicios básicos
 	 hacerlo. Se valorará la utilización de la librería matplotlib de Python.
 	 ![Autocorrelacion](https://user-images.githubusercontent.com/79319805/115210836-e471e300-a0f6-11eb-9935-5d030a52630e.png)
 	 > El segmento de audio contiene la vocal "e". Tras el cálculo, obtenemos una autocorrelación par respecto al origen.
+	 > Para su representación hemos usado el siguiente código, ayudándonos de la biblioteca matplotlib de Python:
+	 <img width="320" alt="Autocorrelacion_codigo" src="https://user-images.githubusercontent.com/79319805/115211894-eb4d2580-a0f7-11eb-8cf4-a07d731c2484.PNG">
 
    * Determine el mejor candidato para el periodo de pitch localizando el primer máximo secundario de la
      autocorrelación. Inserte a continuación el código correspondiente.
