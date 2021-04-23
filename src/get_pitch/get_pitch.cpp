@@ -74,8 +74,8 @@ int main(int argc, const char *argv[]) {
   vector<float>::iterator iX; //Central Clipping
   #if 1
   float threshold = 0.005;
-  for (iX = x.begin(); iX < x.end(); iX++){
-    if (*iX <= threshold && *iX >= -threshold)
+  for (iX=x.begin();iX<x.end();iX++){
+    if (*iX<=threshold&&*iX>=-threshold)
       *iX = 0;
   }
   #endif
@@ -91,9 +91,9 @@ int main(int argc, const char *argv[]) {
   /// or time-warping may be used.
   vector<float>window(3); //Median filter
 
-  for (unsigned int i = 1; i < f0.size() - 1; ++i) { 
-    for (unsigned int p = 0; p < 3; ++p){
-      window[p] = f0[i - 1 + p];
+  for (unsigned int i=1;i<f0.size()-1;i++) { 
+    for (unsigned int p=0;p<3;p++){
+      window[p] = f0[i-1+p];
     } 
    sort(window.begin(), window.end());
    f0[i] = window[1];
