@@ -27,6 +27,9 @@ Usage:
 Options:
     -h, --help  Show this screen
     --version   Show the version of the project
+    -p FLOAT,   --pot_limite=FLOAT valor de la potencia limite [default: -42]
+    -r FLOAT,   --rmax_limite=FLOAT valor max de r [default: 0.43]
+    -1 FLOAT,   --r1_limite=FLOAT valor max de r1 [default: 0.98]
 
 Arguments:
     input-wav   Wave file with the audio signal
@@ -57,9 +60,11 @@ int main(int argc, const char *argv[]) {
 
   int n_len = rate * FRAME_LEN;
   int n_shift = rate * FRAME_SHIFT;
-
+  float potencia=-std::stof(args["--pot_limite"].asString());
+  float rmaxlim=std::stof(args["--rmax_limite"].asString());
+  float r1lim=std::stof(args["--r1_limite"].asString());
   // Define analyzer
-  PitchAnalyzer analyzer(n_len, rate, PitchAnalyzer::HAMMING, 50, 500);
+  PitchAnalyzer analyzer(n_len,rate, PitchAnalyzer::HAMMING, 50, 500,potencia,rmaxlim,r1lim);
 
   /// \TODO
   /// Preprocess the input signal in order to ease pitch estimation. For instance,
