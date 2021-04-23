@@ -13,7 +13,6 @@ namespace upc {
     for (unsigned int l = 0; l < r.size(); ++l) {
   		/// \TODO Compute the autocorrelation r[l]
       r[l]=0;
-<<<<<<< HEAD
         for (unsigned int n=l; n< x.size();n++){
           r[l]+=x[n]*x[n-l];
         }
@@ -21,12 +20,6 @@ namespace upc {
       /// \DONE Autocorrelation *computed*
       /// - holi
       /// - holi2
-=======
-      for(unsigned int n=l; n < x.size(); n++){
-        r[l] += x[n] * x[n-l];
-      }
-      r[l]=r[l]/x.size();
->>>>>>> 6dccbb69eac3e312b47c2de438c8d145a78a09a6
     }
 
     if (r[0] == 0.0F) //to avoid log() and divide zero 
@@ -66,18 +59,11 @@ namespace upc {
   }
 
   bool PitchAnalyzer::unvoiced(float pot, float r1norm, float rmaxnorm) const {
-<<<<<<< HEAD
     if ((r1norm>r1_limite || rmaxnorm> rmax_limite)&&(pot>pot_limite))
       return false;
     else
       return true;
 
-=======
-    /// \TODO Implement a rule to decide whether the sound is voiced or not.
-    /// * You can use the standard features (pot, r1norm, rmaxnorm),
-    ///   or compute and use other ones.
-    return false;
->>>>>>> 6dccbb69eac3e312b47c2de438c8d145a78a09a6
   }
 
   float PitchAnalyzer::compute_pitch(vector<float> & x) const {
@@ -93,23 +79,11 @@ namespace upc {
     //Compute correlation
     autocorrelation(x, r);
 
-<<<<<<< HEAD
     vector<float>::const_iterator iR = r.begin(), iRMax = iR+npitch_min; 
     for(iR = r.begin() + npitch_min; iR < r.begin() + npitch_max; iR++){
       if(*iR > *iRMax)
       iRMax = iR;
     }
-=======
-    vector<float>::const_iterator iR = r.begin(), iRMax = iR + npitch_min;
-
-    /// \TODO 
-	/// Find the lag of the maximum value of the autocorrelation away from the origin.<br>
-	/// Choices to set the minimum value of the lag are:
-	///    - The first negative value of the autocorrelation.
-	///    - The lag corresponding to the maximum value of the pitch.
-    ///	   .
-	/// In either case, the lag should not exceed that of the minimum value of the pitch.
->>>>>>> 6dccbb69eac3e312b47c2de438c8d145a78a09a6
 
     for(iR = r.begin() + npitch_min; iR < r.begin() + npitch_max; iR++){
       if(*iR > *iRMax)
