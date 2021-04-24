@@ -22,14 +22,18 @@ Ejercicios básicos
 
 	 NOTA: es más que probable que tenga que usar Python, Octave/MATLAB u otro programa semejante para
 	 hacerlo. Se valorará la utilización de la librería matplotlib de Python.
-	 ![Autocorrelacion](https://user-images.githubusercontent.com/79319805/115210836-e471e300-a0f6-11eb-9935-5d030a52630e.png)
+	![image](https://user-images.githubusercontent.com/79308448/115963454-9e19eb00-a51f-11eb-9c72-7d2743005af0.png)
+	
+	>Hemos calculado la frecuencia de pitch como (1/75,40) * 16000=  212,20 Hz. 
+	 
 	 > El segmento de audio contiene la vocal "e". Tras el cálculo, obtenemos una autocorrelación par respecto al origen.
 	 > Para su representación hemos usado el siguiente código, ayudándonos de la biblioteca matplotlib de Python:
-	 <img width="320" alt="Autocorrelacion_codigo" src="https://user-images.githubusercontent.com/79319805/115211894-eb4d2580-a0f7-11eb-8cf4-a07d731c2484.PNG">
-
+	![image](https://user-images.githubusercontent.com/79308448/115963040-53e43a00-a51e-11eb-8610-903acae749e5.png)
+	
    * Determine el mejor candidato para el periodo de pitch localizando el primer máximo secundario de la
      autocorrelación. Inserte a continuación el código correspondiente.
-	![image](https://user-images.githubusercontent.com/79308448/115854458-8dd41400-a42a-11eb-8d2e-2ce5132b219e.png)
+	![image](https://user-images.githubusercontent.com/79308448/115963081-7bd39d80-a51e-11eb-899a-e17b047146dd.png)
+
 
    * Implemente la regla de decisión sonoro o sordo e inserte el código correspondiente.
 
