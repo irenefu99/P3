@@ -91,6 +91,7 @@ Ejercicios de ampliación
 
   * Inserte un *pantallazo* en el que se vea el mensaje de ayuda del programa y un ejemplo de utilización
     con los argumentos añadidos.
+![image](https://user-images.githubusercontent.com/79308448/115964932-0ddfa400-a527-11eb-8a16-670e89af8e2e.png)
 
 - Implemente las técnicas que considere oportunas para optimizar las prestaciones del sistema de detección
   de pitch.
