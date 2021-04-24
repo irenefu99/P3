@@ -117,10 +117,10 @@ Ejercicios de ampliación
   por implementar el filtro de mediana, se valorará el análisis de los resultados obtenidos en función de
   la longitud del filtro.
 >Center clipping
->![image](https://user-images.githubusercontent.com/79308448/115965430-8b0c1880-a529-11eb-896b-b16fff8d9486.png)
+![image](https://user-images.githubusercontent.com/79308448/115965430-8b0c1880-a529-11eb-896b-b16fff8d9486.png)
 
 >Filtro de mediana
->![image](https://user-images.githubusercontent.com/79308448/115965457-a70fba00-a529-11eb-9751-8d16cd700d5a.png)
+![image](https://user-images.githubusercontent.com/79308448/115965457-a70fba00-a529-11eb-9751-8d16cd700d5a.png)
 
 Evaluación *ciega* del detector
 -------------------------------
