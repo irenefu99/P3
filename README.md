@@ -60,8 +60,9 @@ Ejercicios básicos
 	    su resultado con el obtenido por la mejor versión de su propio sistema.  Inserte una gráfica
 		ilustrativa del resultado de ambos detectores.
 	<img width="953" alt="pitch lindisimo" src="https://user-images.githubusercontent.com/79308448/115963721-f69db800-a520-11eb-8d6e-315ffef1da7f.PNG">
-	>En esta imagen vemos el  detector de pitch implementado con nuestro código (formato data plot), el pitch que detecta el wavesurfer, la potencia calculada y la señal de voz sonora.
-	>Podemos ver que detectamos el pitch correctamente. Aun así, posteriormente modificaremos diferentes parámetros para tener un sistema aún más preciso.
+
+	> En esta imagen vemos el detector de pitch implementado con nuestro código (formato data plot), el pitch que detecta el wavesurfer, la potencia calculada y la señal de voz sonora.
+	> Podemos ver que detectamos el pitch correctamente. Aun así, posteriormente modificaremos diferentes parámetros para tener un sistema aún más preciso.
   
   * Optimice los parámetros de su sistema de detección de pitch e inserte una tabla con las tasas de error
     y el *score* TOTAL proporcionados por `pitch_evaluate` en la evaluación de la base de datos 
